@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.info {
+  width: 60rem;
+  height: 28rem;
+  max-width: 80%;
+  max-height: 70%;
+  background-color: black;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  color: white;
+}
+
+.jr {
+  grid-row: 1/ 3;
+  grid-column: 1 / 2;
+  position: relative;
+  height: 100%;
+}
+
+.jr .one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70%;
+  width: 100%;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 20px;
+  padding: 1rem 0 2% 1.5rem;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.jr .one small {
+  color: hsl(235, 45%, 71%);
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.jr .one h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.jr img {
+  width: 80px;
+  height: 80px;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.jr .two {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+  padding: 1rem 0 2% 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+
+.jr .two small {
+  cursor: pointer;
+}
+
+.jr .two small:hover {
+  color: white;
+}
+
+.jr .one2 {
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.jr .one2 small {
+  font-size: 1rem;
+}
+
+.jr .one2 h2 {
+  font-size: 1.5rem;
+}
+
+.jr .one2 img {
+  margin-right: 1rem;
+  height: 60px;
+  width: 60px;
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.box section {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 40%;
+}
+
+.box img {
+  position: absolute;
+  height: 60px;
+  height: 60px;
+  right: 0.8rem;
+  top: -0.5rem;
+}
+
+.box div {
+  position: absolute;
+  height: 80%;
+  border-radius: 20px;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(235, 46%, 20%);
+  width: 100%;
+  padding: 1rem 0 2% 1.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.box div:hover {
+  background-color: hsl(235, 46%, 30%);
+}
+
+.box div h3 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.box div h2 {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  font-weight: 200;
+  word-spacing: 1.5px;
+
+}
+
+.box div h3 small {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  transform: translateY(-5px);
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.box div h3 small:hover {
+  color: white;
+}
+
+.box div small {
+  color: hsl(236, 100%, 87%);
+}
+
+.work section {
+  background-color: hsl(15, 100%, 70%);
+}
+.play section {
+  background-color: hsl(195, 74%, 62%);
+}
+.study section {
+  background-color: hsl(348, 100%, 68%);
+}
+.exercise section {
+  background-color: hsl(145, 58%, 55%);
+}
+.social section {
+  background-color: hsl(264, 64%, 52%);
+}
+.selfcare section {
+  background-color: hsl(43, 84%, 65%);
+}
+
+@media screen and (max-width: 900px) {
+  .info {
+    max-width: 95%;
+    max-height: 70%;
+    height: 28rem;
+  }
+  .box div h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 95%;
+  }
+  body {
+    height: auto;
+  }
+  .info {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    max-height: none;
+    height: 1400px;
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .jr {
+    grid-row: 1/ 2;
+    grid-column: 1 / 2;
+    width: 100%;
+  }
+  .jr .one {
+    display: none;
+  }
+  .jr .one2 {
+    display: flex;
+  }
+  .jr .two {
+    height: 60%;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .jr .two br {
+    display: none;
+  }
+  .jr .two small {
+    font-size: 1.2rem;
+  }
+  .box div {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .box div h3 {
+    width: 100%;
+  }
+  .box div h3 small {
+    transform: none;
+  }
+  .box div small {
+    position: absolute;
+    right: 1rem;
+    bottom: 1.7rem;
+  }
+}
+
