@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 let dwm = document.querySelectorAll(".jr .two small");
 let h2 = document.querySelectorAll(".box div h2");
-let small = document.querySelectorAll(".box div #divsm");
+let small = document.querySelectorAll(".box div .divsm");
 var DWM;
 (function (DWM) {
     DWM[DWM["daily"] = 0] = "daily";
