@@ -1,6 +1,6 @@
 let dwm = document.querySelectorAll(".jr .two small");
 let h2 = document.querySelectorAll(".box div h2");
-let small = document.querySelectorAll(".box div #divsm");
+let small = document.querySelectorAll(".box div .divsm");
 
 enum DWM {
   daily,
