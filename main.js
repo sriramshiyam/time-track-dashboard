@@ -51,7 +51,8 @@ function info(num) {
             H2.innerHTML = `${inf[index]["timeframes"][t]["current"]}hrs`;
         });
         small.forEach((SMALL, index) => {
-            SMALL.innerHTML = `Last Week - ${inf[index]["timeframes"][t]["previous"]}hrs`;
+            let d = num === 0 ? "Day" : num === 1 ? "Week" : num === 2 ? "Month" : "";
+            SMALL.innerHTML = `Last ${d} - ${inf[index]["timeframes"][t]["previous"]}hrs`;
         });
     });
 }
