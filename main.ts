@@ -37,7 +37,7 @@ async function info(num: number) {
   let inf = await fetch("./data.json")
     .then((r) => r.json())
     .then((res) => res);
-  let t =
+  let t: string =
     num === 0 ? "daily" : num === 1 ? "weekly" : num === 2 ? "monthly" : "";
 
   h2.forEach((H2, index) => {
@@ -45,7 +45,7 @@ async function info(num: number) {
   });
 
   small.forEach((SMALL, index) => {
-    let d = num === 0 ? "Day" : num === 1 ? "Week" : num === 2 ? "Month" : "";
+    let d: string = num === 0 ? "Day" : num === 1 ? "Week" : num === 2 ? "Month" : "";
     SMALL.innerHTML = `Last ${d} - ${inf[index]["timeframes"][t]["previous"]}hrs`;
   });
 }
