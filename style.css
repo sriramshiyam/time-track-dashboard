@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
   height: 70%;
   width: 100%;
   background-color: hsl(246, 80%, 60%);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 1rem 0 2% 1.5rem;
   z-index: 1;
   box-sizing: border-box;
@@ -73,7 +73,7 @@ body::-webkit-scrollbar {
   height: 40%;
   width: 100%;
   background-color: hsl(235, 46%, 20%);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 1rem 0 2% 1.5rem;
   display: flex;
   flex-direction: column;
@@ -116,7 +116,7 @@ body::-webkit-scrollbar {
 }
 
 .box section {
-  border-radius: 20px;
+  border-radius: 12px;
   position: relative;
   overflow: hidden;
   height: 40%;
@@ -133,7 +133,7 @@ body::-webkit-scrollbar {
 .box div {
   position: absolute;
   height: 80%;
-  border-radius: 20px;
+  border-radius: 12px;
   bottom: 0;
   left: 0;
   background-color: hsl(235, 46%, 20%);
